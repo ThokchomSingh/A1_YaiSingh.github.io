@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+
+
+    <main>
+      <div class="content">
+        <h1 style="text-align: center; padding-top: 10%;">HELLO STRANGER</h1>
+        <p style="text-transform: capitalize; text-align: center;">something's waiting for you !<br> Click the button below to IGNITE !</p>
+    
+   </div>
+
+
+<div class="container">
+  <p style="text-align:center;">SURPRISE</p>
+  <a href="https://images.unsplash.com/photo-1536782376847-5c9d14d97cc0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZnJlZXxlbnwwfHwwfHw%3D&w=1000&q=80">
+      <button class="btn btn-primary btn-lg;">Picture</button>
+  </a>
+<br0>
+  <a href="https://www.lipsum.com/">
+    <button class="btn btn-primary btn-lg;">Text</button>
+</a>
+
+
+<p style="text-align: end;">
+  <br>
+  <a href="https://www.google.com/">Search right 'way</a></p>
+
+
+</div>
+
+<button onclick="addParagraph()">Add Text</button>
+
+<script>
+  function addParagraph() {
+    var newParagraph = document.createElement('p');
+    var paragraphText = document.createTextNode('This is a new paragraph!');
+    newParagraph.appendChild(paragraphText);
+    document.body.appendChild(newParagraph);
+  }
+</script>
+
+
+<button onclick="addImage()">Add Picture</button>
+
+<script>
+  function addImage() {
+    var newImage = document.createElement('img');
+    newImage.setAttribute('src', 'istockphoto-629022568-612x612.jpg', 'pexels-pixabay-268533.jpg');
+    document.body.appendChild(newImage);
+  }
+</script>
+
+
+
+
+    </main>
+    <script src="WebsiteDOM.js"></script>
+  </body>
+</html>
+
+ 
